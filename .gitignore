@@ -1,0 +1,8 @@
+/bower_components/*
+/.sass-cache/*
+*.DS_Store
+/node_modules/*
+/dist/*
+/public/npm-debug.log
+/css/*
+gulpfile.js

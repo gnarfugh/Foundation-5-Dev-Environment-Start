@@ -1,0 +1,8 @@
+//fix ios scroll jumping
+html {
+    overflow: hidden;
+}
+body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}

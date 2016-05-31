@@ -1,0 +1,25 @@
+{
+  "name": "dhdchicago",
+  "description": "crc setup",
+  "main": "index.js",
+  "authors": [
+    "dhdchicago"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "^5.5.3"
+  },
+  "dependencies": {
+    "foundation": "^5.5.3"
+  }
+}
