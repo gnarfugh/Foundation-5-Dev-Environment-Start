@@ -45,6 +45,11 @@ var PATHS = {
   ]
 };
 
+//lint scss
+gulp.task('scss-lint', function() {
+  gulp.src('scss/**/*.scss')
+    .pipe(scsslint());
+});
 
 //throw error if scss breaks
 gulp.task('scss', function() {
