@@ -64,8 +64,8 @@ gulp.task('scss', function() {
   };
   //compile scss + slim off unused css + minify css
   return gulp.src('scss/app.scss')
-    .pipe(sass({ includePaths: ['bower_components/foundation/scss'] }))
     .pipe(plumber({ errorHandler: onError }))
+    .pipe(sass({ includePaths: ['bower_components/foundation/scss'] }))
     .pipe(prefix({
       browsers: ['last 2 versions', '>5%', 'ie >= 9']
     }))
