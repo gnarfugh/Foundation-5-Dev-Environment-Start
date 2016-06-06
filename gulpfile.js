@@ -64,12 +64,12 @@ gulp.task('scss', function() {
   };
   //compile scss + slim off unused css + minify css
   return gulp.src('scss/app.scss')
+    .pipe(sourcemaps.init())
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sass({ includePaths: ['bower_components/foundation/scss'] }))
     .pipe(prefix({
       browsers: ['last 2 versions', '>5%', 'ie >= 9']
     }))
-    .pipe(sourcemaps.init())
     .pipe(gulp.dest('css'))
     .pipe(nano())
     .pipe(rename({ suffix: '.min' }))
@@ -95,7 +95,6 @@ gulp.task('images', function() {
     .pipe(imagemin({ progressive: true }))
     .pipe(gulp.dest('dist/images'));
 });
-
 
 gulp.task('default', ['clean'], function() {
   gulp.start('scss', 'js', 'images', 'serve');
