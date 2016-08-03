@@ -1,18 +1,18 @@
 var gulp = require('gulp'),
-  del = require('del'),
-  size = require('gulp-size'),
-  sass = require('gulp-sass'),
-  nano = require('gulp-cssnano'),
-  rename = require('gulp-rename'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-  notify = require('gulp-notify'),
-  plumber = require('gulp-plumber'),
-  imagemin = require('gulp-imagemin'),
-  scsslint = require('gulp-scss-lint'),
-  prefix = require('gulp-autoprefixer'),
-  sourcemaps = require('gulp-sourcemaps'),
-  browserSync = require('browser-sync').create();
+    del = require('del'),
+    size = require('gulp-size'),
+    sass = require('gulp-sass'),
+    nano = require('gulp-cssnano'),
+    rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    notify = require('gulp-notify'),
+    plumber = require('gulp-plumber'),
+    imagemin = require('gulp-imagemin'),
+    scsslint = require('gulp-scss-lint'),
+    prefix = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync').create();
 
 //Clean dist folder for each build
 gulp.task('clean', function(done) {
